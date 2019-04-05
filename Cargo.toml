@@ -1,0 +1,8 @@
+[package]
+name = "failure_chain"
+version = "0.1.0"
+authors = ["Cristi Cobzarenco <cristi.cobzarenco@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+failure = "0.1.5"
