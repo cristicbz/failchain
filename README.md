@@ -18,7 +18,6 @@ library implementes th complex one (and the most useful one) but without all the
 
 ### What it looks like
 
-#### Enum
 ```rust
 // errors.rs
 use failchain::{BoxedError, ChainErrorKind};

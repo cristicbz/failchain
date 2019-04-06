@@ -11,7 +11,6 @@
 //!
 //! ### What it looks like
 //!
-//! #### Enum
 //! ```rust
 //! mod errors {
 //!     // errors.rs
