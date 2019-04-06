@@ -1,6 +1,6 @@
 [package]
 name = "failchain"
-version = "0.1.5"
+version = "0.1015.0"
 authors = ["Cristi Cobzarenco <cristi.cobzarenco@gmail.com>"]
 edition = "2018"
 
