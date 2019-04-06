@@ -4,5 +4,13 @@ version = "0.1015.0"
 authors = ["Cristi Cobzarenco <cristi.cobzarenco@gmail.com>"]
 edition = "2018"
 
+description = "Ergonomic companion library for failure."
+homepage = "https://github.com/cristicbz/failchain"
+repository = "https://github.com/cristicbz/failchain"
+documentation = "https://docs.rs/failchain"
+readme = "README.md"
+keywords = ["error", "handling", "error_chain", "failure"]
+license = "MIT/Apache-2.0"
+
 [dependencies]
 failure = "0.1.5"
