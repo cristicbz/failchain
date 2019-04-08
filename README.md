@@ -13,7 +13,7 @@ by bringing back:
   * support for `bail!` and `ensure!` with custom `ErrorKind`-s
 
 The `failure` library recommends three different patterns for errors. This
-library implementes th complex one (and the most useful one) but without all the [boilerplate](https://boats.gitlab.io/failure/error-errorkind.html).
+library implementes the most complex one (and the most useful one) but without all the [boilerplate](https://boats.gitlab.io/failure/error-errorkind.html).
 
 
 ### What it looks like
