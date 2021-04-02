@@ -11,7 +11,7 @@
 //!
 //! ### What it looks like
 //!
-//! ```rust
+//! ```norust
 //! mod errors {
 //!     // errors.rs
 //!     use failchain::{BoxedError, ChainErrorKind};
@@ -174,7 +174,7 @@ impl<SuccessT, ErrorT: Fail> ResultExt for Result<SuccessT, ErrorT> {
 /// Examples
 /// ---
 ///
-/// ```rust
+/// ```norust
 /// // With an ErrorKind.
 /// bail!(ErrorKind::CorruptFile(format!("the file at {:?} is corrupt", file_path)))
 ///
@@ -202,7 +202,7 @@ macro_rules! bail {
 /// Examples
 /// ---
 ///
-/// ```rust
+/// ```norust
 /// // With an ErrorKind.
 /// ensure!(
 ///     file_path != corrupt_file_path,
@@ -242,7 +242,7 @@ macro_rules! ensure {
 }
 
 impl<ErrorKindT: Fail> Fail for UnboxedError<ErrorKindT> {
-    fn cause(&self) -> Option<&Fail> {
+    fn cause(&self) -> Option<&dyn Fail> {
         self.inner.cause()
     }
 
@@ -276,7 +276,7 @@ impl<ErrorKindT: Fail> BoxedError<ErrorKindT> {
 }
 
 impl<ErrorKindT: Fail> Fail for BoxedError<ErrorKindT> {
-    fn cause(&self) -> Option<&Fail> {
+    fn cause(&self) -> Option<&dyn Fail> {
         self.inner.cause()
     }
 
