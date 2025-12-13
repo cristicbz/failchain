@@ -1,3 +1,5 @@
+# ARCHIVED: This has long been superseded by much better solutions in the ecosystem (e.g. `thiserror`)
+
 failchain
 ---
 
